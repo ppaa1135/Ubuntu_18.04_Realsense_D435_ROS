@@ -21,14 +21,34 @@
   mkdir -p ~/catkin_ws/src
   cd ~/catkin_ws/src/
   ```  
-
+  패키지 다운로드
   ```
   git clone https://github.com/IntelRealSense/realsense-ros.git
   cd realsense-ros/
   git checkout `git tag | sort -V | grep -P "^\d+\.\d+\.\d+" | tail -1`
   cd ..
   ```
-  ddynamic_reconfigure
+  
+  패키지 설치
+  ```
+  catkin_init_workspace
+  cd ..
+  catkin_make clean
+  catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
+  catkin_make install
+  echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+  source ~/.bashrc
+  ```
+  
+  ddynamic_reconfigure 에러나면 
+  ```
+  cd src
+  git clone https://github.com/pal-robotics/ddynamic_reconfigure/tree/kinetic-devel
+  cd ..
+  ```
+  
+  D435 
+  
   ```
   roslaunch realsense2_camera rs_camera.launch
   ```
