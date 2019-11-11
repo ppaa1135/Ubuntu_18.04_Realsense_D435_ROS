@@ -1,4 +1,4 @@
-# Ubuntu-18.04 Realsense
+# Ubuntu-18.04 Realsense D435
 
 * ### 아래 주소의 Installing the packages 항목을 보고 설치 
 
@@ -10,7 +10,9 @@
   sudo apt-get install librealsense2-utils
   sudo apt-get install librealsense2-dev
   sudo apt-get install librealsense2-dbg
-  realsense-viewer (리얼센스 패키지 설치 확인하기)
+  
+  (리얼센스 패키지 설치 확인하기)
+  realsense-viewer
   ```
 
 * ### Install Realsense ROS - 리얼센스 ROS 패키지 설치하기
