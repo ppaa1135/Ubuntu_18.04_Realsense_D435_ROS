@@ -1,4 +1,4 @@
-# Ubuntu-18.04 Realsense D435
+# Ubuntu-18.04 / Realsense D435 / ROS
 
 * ### 아래 주소의 Installing the packages 항목을 보고 설치 
 
@@ -17,7 +17,7 @@
 
 * ### Install Realsense ROS - 리얼센스 ROS 패키지 설치하기
 
-  1) __catkin workspace 만들기 (ROS 설치되어 있으면 스킵)__ 
+  1) catkin workspace 만들기 (ROS 설치되어 있으면 스킵)
   ```
   mkdir -p ~/catkin_ws/src
   cd ~/catkin_ws/src/
