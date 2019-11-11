@@ -16,12 +16,13 @@
 
 * ### Install Realsense ROS - 리얼센스 ROS 패키지 설치하기
 
-  catkin workspace 만들기 (ROS 설치되어 있으면 스킵) 
+  1) catkin workspace 만들기 (ROS 설치되어 있으면 스킵) 
   ```
   mkdir -p ~/catkin_ws/src
   cd ~/catkin_ws/src/
   ```  
-  패키지 다운로드
+  
+  2) 패키지 다운로드
   ```
   git clone https://github.com/IntelRealSense/realsense-ros.git
   cd realsense-ros/
@@ -29,7 +30,7 @@
   cd ..
   ```
   
-  패키지 설치
+  3) 패키지 설치
   ```
   catkin_init_workspace
   cd ..
@@ -40,15 +41,14 @@
   source ~/.bashrc
   ```
   
-  ddynamic_reconfigure 에러나면 
+  4) ddynamic_reconfigure 에러나면 (아래 실행 후 다시 3번으로) 
   ```
   cd src
   git clone https://github.com/pal-robotics/ddynamic_reconfigure/tree/kinetic-devel
   cd ..
   ```
   
-  D435 
-  
+  5) D435 실행하기
   ```
   roslaunch realsense2_camera rs_camera.launch
   ```
