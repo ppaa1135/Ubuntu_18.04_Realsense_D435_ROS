@@ -1,9 +1,8 @@
 # Ubuntu-18.04 Realsense
 
-* ### https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
+* ### 아래 주소의 Installing the packages 항목을 보고 설치 
 
-  1) Installing the packages 항목을 보고 설치
-
+  1) https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
   ``` 
   sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key
   sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo bionic main" -u
